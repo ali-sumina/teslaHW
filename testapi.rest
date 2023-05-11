@@ -1,0 +1,37 @@
+### Read
+
+GET http://localhost:4700/cars
+
+
+### Read by ID
+
+GET http://localhost:4700/cars/3
+
+### Create 
+
+POST http://localhost:4700/cars
+Content-type:application/json
+
+{
+    "Name": "Some Model",
+    "Range": 642,
+    "TopSpeed": 330,
+    "PeakPower": 1040
+}
+
+
+### Update Name
+
+PUT http://localhost:4700/cars/3
+Content-Type: application/json
+
+{
+    "Name": "Super Exceptional Model"
+}
+
+
+### Delete 
+
+DELETE http://localhost:4700/cars/4
+
+
